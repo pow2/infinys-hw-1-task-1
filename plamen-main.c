@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 int main() {
-    userInputForFibonaciiNumber();
+    userInputForFibonacciNumber();
     return 0;
 }
 
-unsigned long long fibonacii(int n){
+unsigned long long fibonacci(int n){
      if (n == 0){
         return 0;
     } else {
@@ -24,7 +24,7 @@ unsigned long long fibonacii(int n){
     }
 }
 
-short fibonaciiInputChecker(int n){
+short fibonacciInputChecker(int n){
     if (n < 0) {
         printf("Incorrect input. Please insert a positive number");
         return 1;
@@ -36,12 +36,12 @@ short fibonaciiInputChecker(int n){
     }
 }
 
-void userInputForFibonaciiNumber(void){
+void userInputForFibonacciNumber(void){
     printf("Enter n to get fibonacii(n) number: ");
     int inputNumber = 0;
     scanf("%d", &inputNumber);
-    if ( fibonaciiInputChecker(inputNumber) == 0 ){
-        printf("The n number of fibonacii is : %llu", fibonacii(inputNumber));
+    if ( fibonacciInputChecker(inputNumber) == 0 ){
+        printf("The n number of fibonacci is : %llu", fibonacci(inputNumber));
     }
 
 }
